@@ -1,0 +1,30 @@
+apiVersion: v2
+entries:
+  carbonetes-analyzer:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-05-31T20:26:49.421114+08:00"
+    description: Executes Carbonetes complete analysis
+    digest: 613c8cb75f5db2ea50cefed4c89b86ddbbfd798ac568464c279e3252a54bfced
+    home: https://carbonetes.com
+    sources:
+    - https://github.com/carbonetes/carbonetes-analyzer
+    urls:
+    - https://github.com/carbonetes/carbonetes-analyzer/archive/refs/tags/1.0.1.tar.gz
+    icon: https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png
+    maintainers:
+      - name: Carbonetes
+        email: eng@carbonetes.com
+        support: support@carbonetes.com
+    keywords:
+    - analysis
+    - scan
+    - docker
+    - image
+    - container
+    - security
+    - vulnerability
+    - scanner
+    - carbonetes
+    version: 1.0.1
+generated: "2021-05-31T20:26:49.421114+08:00"
