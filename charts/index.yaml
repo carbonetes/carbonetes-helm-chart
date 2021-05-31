@@ -5,6 +5,7 @@ entries:
     description: Executes Carbonetes complete analysis
     digest: 613c8cb75f5db2ea50cefed4c89b86ddbbfd798ac568464c279e3252a54bfced
     home: https://carbonetes.com
+    name: carbonetes-analyzer
     sources:
     - https://github.com/carbonetes/carbonetes-analyzer
     urls:
