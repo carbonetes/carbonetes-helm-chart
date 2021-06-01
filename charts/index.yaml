@@ -11,19 +11,4 @@ entries:
     urls:
     - https://carbonetes.github.io/carbonetes-helm-chart/charts/carbonetes-analyzer-1.0.1.tar.gz
     version: 1.0.1
-    icon: https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png
-    maintainers:
-      - name: Carbonetes
-        email: eng@carbonetes.com
-        support: support@carbonetes.com
-    keywords:
-    - analysis
-    - scan
-    - docker
-    - image
-    - container
-    - security
-    - vulnerability
-    - scanner
-    - carbonetes
 generated: "2021-05-31T20:26:49.421114+08:00"
