@@ -20,15 +20,32 @@
 
     <style>
       .footer {
-        bottom: 0;
-        position: absolute;
         padding: 10px;
+        color: rgb(160, 160, 160);
       }
 
       .main-navigation {
           box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
           width: 100%;
           padding-bottom: 10px;
+      }
+
+      @media screen and (max-width: 992px) {
+        nav img {
+          width: 30% !important;
+        }
+        .nav {
+          font-size: 15px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        nav img {
+          width: 40% !important;
+        }
+        .nav {
+          font-size: 15px;
+        }
       }
     </style>
 
@@ -117,7 +134,7 @@
             </li>
           </ul>
 
-          <ul style="margin-top: 50px;" class="nav nav-pills nav-stacked">
+          <ul style="margin-top: 20px;" class="nav nav-pills nav-stacked">
             <li class="active"><a href="https://hub.docker.com/repository/docker/carbonetes/carbonetes-analyzer">Releases</a>
               <ul style="margin-top: 10px;">
                 <li><a href="./carbonetes-analyzer-1.0.1.tgz">v1.0.1</a></li>
@@ -137,7 +154,7 @@
           <!-- Last Updated Design Area-->
           <span style="font-weight: bold;">Last Updated:</span> Tuesday, June 1, 2021
         </p>
-        <p>Copyrights &copy; 2021 All Rights Reserved by <span style="font-weight: bold; color: #247ea0;">Carbonetes</span></p>
+        <p>Copyrights &copy; 2021 All Rights Reserved by <a style="text-decoration: none;" href="https://carbonetes.com"><span style="font-weight: bold; color: #247ea0;">Carbonetes</span></a></p>
       </footer>
 
     </div> <!-- /container -->
