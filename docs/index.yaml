@@ -11,7 +11,7 @@ entries:
     sources:
     - https://github.com/carbonetes/carbonetes-analyzer
     urls:
-    - https://https:/carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.1.tgz
+    - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     created: "2021-06-01T15:13:42.52666+08:00"
@@ -22,6 +22,6 @@ entries:
     sources:
     - https://github.com/carbonetes/carbonetes-analyzer
     urls:
-    - https://https:/carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.0.tgz
+    - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.0.tgz
     version: 1.0.0
 generated: "2021-06-01T15:13:42.524735+08:00"
