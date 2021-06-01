@@ -5,4 +5,4 @@
   $ helm install carbonetes/carbonetes-analyzer
 ```
 
-[index.yaml](https://carbonetes.github.io/carbonetes-helm-chart/index.yaml)
+[index.yaml](https://carbonetes.github.io/carbonetes-helm-chart/charts/index.yaml)

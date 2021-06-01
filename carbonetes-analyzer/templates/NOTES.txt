@@ -1,0 +1,30 @@
+{{- if .Values.carbonetesCredentials.username }}
+  {{- if .Values.carbonetesCredentials.password }}
+    Carbonetes Analyzer can be executed using the port {{ .Values.service.port }} with DNS name within the cluster:
+      {{ template "carbonetes-analyzer.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
+
+    To verify the install you can get the application URL by running these commands:
+      export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "carbonetes-analyzer.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
+      export CONTAINER_PORT=$(kubectl get pod --namespace {{ .Release.Namespace }} $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+      kubectl --namespace {{ .Release.Namespace }} port-forward $POD_NAME 3000:$CONTAINER_PORT
+
+    Send the following workloads to execute the Carbonetes Complete Analysis:
+    {
+      "registryUri" : "12345678910.dkr.ecr.us-west-2.amazonaws.com",
+      "repoImageTag" : "busybox:latest",
+      "output" : "yaml" // optional by-default: json
+    }
+  {{- else }}
+    You need a valid Carbonetes credentials (email and password) to use this Helm Chart.
+      - If you don't have any credentials yet, register here: https://carbonetes.com
+    
+    After your registration, update this helm chart using this command:
+      helm upgrade carbonetes-analyzer carbonetes/carbonetes-analyzer --set carbonetesCredentials.username="username@email.com" --set carbonetesCredentials.password="mypassword"
+  {{- end }}
+{{- else }}
+    You need a valid Carbonetes credentials (email and password) to use this Helm Chart.
+      - If you don't have any credentials yet, register here: https://carbonetes.com
+
+    After your registration, update this helm chart using this command:
+      helm upgrade carbonetes-analyzer carbonetes/carbonetes-analyzer --set carbonetesCredentials.username="username@email.com" --set carbonetesCredentials.password="mypassword"
+{{- end }}

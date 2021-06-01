@@ -9,7 +9,7 @@ entries:
     sources:
     - https://github.com/carbonetes/carbonetes-analyzer
     urls:
-    - https://carbonetes.github.com/carbonetes-helm-chart/carbonetes-analyzer-1.0.1.tar.gz
+    - https://carbonetes.github.io/carbonetes-helm-chart/charts/carbonetes-analyzer-1.0.1.tar.gz
     version: 1.0.1
     icon: https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png
     maintainers:
