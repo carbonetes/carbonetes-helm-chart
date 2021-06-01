@@ -11,7 +11,7 @@ carbonetesCreds:
 debugging: false
 
 image:
-  repository: carbonetes/carbonetes-analyzer:1.0.0
+  repository: carbonetes/carbonetes-analyzer:1.0.1
   pullPolicy: Always
 
 imagePullSecrets: []

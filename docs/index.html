@@ -1,12 +1,143 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+
+    <!-- Declared Vars To Go Here -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Metadata -->
+    <meta name="A helm chart virtual repo for Carbonetes" content="">
+    <meta name="Carbonetes" content="">
+
+    <!-- Page Name and Site Name -->
     <title>Carbonetes Helm Chart Repo</title>
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .footer {
+        bottom: 0;
+        position: absolute;
+      }
+
+      .main-navigation {
+          box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+          width: 100%;
+          padding-bottom: 10px;
+      }
+    </style>
+
   </head>
+
   <body>
-    <h1>Carbonetes Helm Chart Repository</h1>
-    <p>Use the following commands to install Carbonetes Helm Chart</p>
-    <p> $ helm repo add carbonetes https://carbonetes.github.io/carbonetes-helm-chart </p>
-    <p> $ helm install carbonetes/carbonetes-analyzer </p>
-    <p><a href="./index.yaml">See index.yaml</a></p>
+
+    <div class="container">
+
+      <header style="margin-top: 20px;" class="header clearfix">
+
+        <!-- Main Menu -->
+        <nav class="main-navigation">
+          <a href="https://carbonetes.com"><img style="width: 20%;" src="https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png" alt="Carbonetes"></a>
+
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="https://console.carbonetes.com/signin"">Signin</a></li>
+            <li><a href="https://console.carbonetes.com/register">Register</a></li>
+          </ul>
+        </nav>
+
+        
+
+      </header>
+
+      <div class="page-heading">
+
+        <!-- Page Heading -->
+        <h1>Carbonetes Helm Chart Virtual Repository</h1>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-9">
+
+          <div class="page-contents">
+
+            <!-- Design Body -->
+            <h3 style="color:#247ea0; font-weight: bold;">Carbonetes Analyzer</h3>
+            <div style="padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+              <p>The Carbonetes Analyzer is created specifically, to used as Carbonetes Helm Chart.</p>
+              <p><a style="text-decoration: none; color:#247ea0; font-weight: bold;" href="https://helm.sh/">Helm</a> is a package manager for Kubernetes.
+                It helps deploying applications easily in a cluster. Helm uses
+                <a style="text-decoration: none; color:#247ea0; font-weight: bold;" href="https://helm.sh/docs/topics/charts/">Charts</a> as its packaging format.
+                A chart is a collection of Kubernetes manifest files that can deploy a simple or complex applications.
+              </p>
+            </div>
+
+            <h4 style="color:#247ea0; font-weight: bold;">Installation</h4>
+            <div style="padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+              <p>First, you need to install Helm by following this <a style="text-decoration: none; color:#247ea0; font-weight: bold;"  href="https://helm.sh/docs/intro/install/">guidelines</a>.</p>
+              <p>After installing helm, add this helm repo by running the command below:</p>
+              <div style="background-color: rgb(221, 221, 221); padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+                <p>helm repo add carbonetes https://carbonetes.github.io/carbonetes-helm-chart/</p>
+              </div>
+              <p>Then install <span style="font-style: italic; color: #247ea0;">Carbonetes Analyzer</span> using the command below:</p>
+              <div style="background-color: rgb(221, 221, 221); padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+                <p>helm install carbonetes-analyzer carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"</p>
+              </div>
+              <p>Or via custom <span style="font-style: italic; color: #247ea0;">values.yaml</span>:</p>
+              <div style="background-color: rgb(221, 221, 221); padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+                <p>helm install carbonetes-analyzer -f carbonetes-creds.yaml carbonetes/carbonetes-analyzer</p>
+              </div>
+              <p><span style="font-style: italic; color: #247ea0;">carbonetes-creds.yaml</span> must include the following values:</p>
+              <div style="background-color: rgb(221, 221, 221); padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
+                <p>carbonetesCreds:</p>
+                <p style="margin-left: 25px;">username: "username@email.com"</p>
+                <p style="margin-left: 25px;">password: "mypassword"</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-3">
+
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="">Github Repos</a>
+              <ul style="margin-top: 10px;">
+                <li><a href="https://github.com/carbonetes/carbonetes-analyzer">Carbonetes Analyzer</a></li>
+                <li><a href="https://github.com/carbonetes/carbonetes-helm-chart">Helm Chart</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul style="margin-top: 50px;" class="nav nav-pills nav-stacked">
+            <li class="active"><a href="https://hub.docker.com/repository/docker/carbonetes/carbonetes-analyzer">Releases</a>
+              <ul style="margin-top: 10px;">
+                <li><a href="./carbonetes-analyzer-1.0.1.tgz">v1.0.1</a></li>
+                <li><a href="./carbonetes-analyzer-1.0.0.tgz">v1.0.0</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <p>
+          <!-- Last Updated Design Area-->
+          <span style="font-weight: bold;">Last Updated:</span> Tuesday, June 1, 2021
+        </p>
+        <p>Copyrights &copy; 2021 All Rights Reserved by <span style="font-weight: bold; color: #247ea0;">Carbonetes</span></p>
+      </footer>
+
+    </div> <!-- /container -->
+
   </body>
 </html>
