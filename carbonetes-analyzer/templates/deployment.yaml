@@ -35,9 +35,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: CARBONETES_USERNAME
-              value: {{ .Values.carbonetesCredentials.username }}
+              value: {{ .Values.carbonetesCreds.username }}
             - name: CARBONETES_PASSWORD
-              value: {{ .Values.carbonetesCredentials.password }}
+              value: {{ .Values.carbonetesCreds.password }}
             - name: DEBUG
               value: "{{ .Values.debugging }}"
           ports:

@@ -1,14 +1,15 @@
-apiVersion: v2
+apiVersion: v1
 entries:
   carbonetes-analyzer:
-  - created: "2021-05-31T20:26:49.421114+08:00"
-    description: Executes Carbonetes complete analysis
-    digest: 613c8cb75f5db2ea50cefed4c89b86ddbbfd798ac568464c279e3252a54bfced
+  - apiVersion: v2
+    created: "2021-06-01T12:30:27.557625+08:00"
+    description: Executes Carbonetes complete securty analysis
+    digest: 99315889fffff00f24317ba231a608cc03b5fc2ad73f003a8dfd8a87631f6e7b
     home: https://carbonetes.com
     name: carbonetes-analyzer
     sources:
     - https://github.com/carbonetes/carbonetes-analyzer
     urls:
-    - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.1.tar.gz
-    version: 1.0.1
-generated: "2021-05-31T20:26:49.421114+08:00"
+    - https:///carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-06-01T12:30:27.556567+08:00"

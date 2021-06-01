@@ -1,6 +1,7 @@
 apiVersion: v2
 name: carbonetes-analyzer
-description: Executes Carbonetes complete analysis
-type: application
-version: "1.0.0"
-appVersion: "1.16.0"
+description: Executes Carbonetes complete securty analysis
+version: 1.0.0
+home: https://carbonetes.com
+sources:
+- https://github.com/carbonetes/carbonetes-analyzer
