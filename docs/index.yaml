@@ -2,8 +2,33 @@ apiVersion: v1
 entries:
   carbonetes-analyzer:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2021-06-01T20:57:33.883241+08:00"
+    description: Executes Carbonetes complete security analysis
+    digest: a64bc8e0a4f3394cbd93f631de9e972bba646b96a3c4bc494ea41a7020daec67
+    home: https://carbonetes.com
+    icon: https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png
+    keywords:
+    - security
+    - analysis
+    - docker
+    - image
+    - container
+    - carbonetes
+    - analyzer
+    - vulnerabilities
+    maintainers:
+    - email: eng@carbonetes.com
+      name: Carbonetes
+    name: carbonetes-analyzer
+    sources:
+    - https://github.com/carbonetes/carbonetes-analyzer
+    urls:
+    - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-01T20:13:21.023298+08:00"
+    created: "2021-06-01T20:57:33.88273+08:00"
     description: Executes Carbonetes complete securty analysis
     digest: b1b165fdb8d6398289b2f7baefbfcf64eaefc820fa137d95693f1a8bb76312ea
     home: https://carbonetes.com
@@ -14,7 +39,7 @@ entries:
     - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2021-06-01T20:13:21.022504+08:00"
+    created: "2021-06-01T20:57:33.881271+08:00"
     description: Executes Carbonetes complete securty analysis
     digest: 99315889fffff00f24317ba231a608cc03b5fc2ad73f003a8dfd8a87631f6e7b
     home: https://carbonetes.com
@@ -24,4 +49,4 @@ entries:
     urls:
     - https://carbonetes.github.io/carbonetes-helm-chart/carbonetes-analyzer-1.0.0.tgz
     version: 1.0.0
-generated: "2021-06-01T20:13:21.019983+08:00"
+generated: "2021-06-01T20:57:33.880393+08:00"
