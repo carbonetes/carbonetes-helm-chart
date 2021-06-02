@@ -4,7 +4,7 @@ description: Executes Carbonetes complete security analysis
 version: 1.0.4
 appVersion: "1.0.2"
 home: https://carbonetes.com
-icon: https://carbonetes.github.io/carbonetes-helm-chart/img/icon.png
+icon: https://carbonetes.github.io/carbonetes-helm-chart/img/logo.png
 sources:
  - https://github.com/carbonetes/carbonetes-analyzer
 maintainers:
