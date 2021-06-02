@@ -1,17 +1,15 @@
-# Default values for carbonetes-analyzer.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
 replicaCount: 1
 
 carbonetesCreds:
   username: ""
   password: ""
 
-debugging: false
+# Enable this for debugging purposes
+debugging:
+  enabled: false
 
 image:
-  repository: carbonetes/carbonetes-analyzer:1.0.1
+  repository: carbonetes/carbonetes-analyzer:1.0.2
   pullPolicy: Always
 
 imagePullSecrets: []
@@ -46,12 +44,12 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: chart.local
       paths: []
   tls: []
-  #  - secretName: chart-example-tls
+  #  - secretName: chart-tls
   #    hosts:
-  #      - chart-example.local
+  #      - chart.local
 
 resources: {}
   # limits:

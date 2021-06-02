@@ -39,7 +39,7 @@ spec:
             - name: CARBONETES_PASSWORD
               value: {{ .Values.carbonetesCreds.password }}
             - name: DEBUG
-              value: "{{ .Values.debugging }}"
+              value: "{{ .Values.debugging.enabled }}"
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

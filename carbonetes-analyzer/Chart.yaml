@@ -1,8 +1,8 @@
 apiVersion: v2
 name: carbonetes-analyzer
 description: Executes Carbonetes complete security analysis
-version: 1.0.3
-appVersion: "1.0.1"
+version: 1.0.4
+appVersion: "1.0.2"
 home: https://carbonetes.com
 icon: https://carbonetes.github.io/carbonetes-helm-chart/icon.png
 sources:

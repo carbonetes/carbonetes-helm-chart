@@ -6,29 +6,29 @@
     To verify the install you can get the application URL by running these command:
       kubectl --namespace <RELEASE-NAMESPACE> port-forward <POD_NAME> 3000:3000
     
-    Send the following workloads to execute the Carbonetes Complete Analysis:
+    Send the following workloads to execute an analysis:
     {
       "registryUri" : "12345678910.dkr.ecr.us-west-2.amazonaws.com",
       "repoImageTag" : "busybox:latest",
       "output" : "yaml" // optional by-default: json
     }
   {{- else }}
-    You need a valid Carbonetes credentials (email and password) to use this Helm Chart.
+    You need a valid credentials (email and password) to use this Helm Chart.
       - If you don't have any credentials yet, register here: https://console.carbonetes.com/register
     
     After your registration, update this helm chart using this command:
-      helm upgrade carbonetes-analyzer carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"
+      helm upgrade <release-name> carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"
 
-    Via custom values.yaml (Visit https://github.com/carbonetes/carbonetes-helm-chart for full documentation):
-      helm upgrade carbonetes-analyzer -f carbonetes-creds.yaml carbonetes/carbonetes-analyzer
+    Via custom carbonetes-creds.yaml (Visit https://carbonetes.github.io/carbonetes-helm-chart for full documentation):
+      helm upgrade <release-name> -f <carbonetes-creds.yaml> carbonetes/carbonetes-analyzer
   {{- end }}
 {{- else }}
-    You need a valid Carbonetes credentials (email and password) to use this Helm Chart.
+    You need a valid credentials (email and password) to use this Helm Chart.
       - If you don't have any credentials yet, register here: https://console.carbonetes.com/register
     
     After your registration, update this helm chart using this command:
-      helm upgrade carbonetes-analyzer carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"
+      helm upgrade <release-name> carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"
 
-    Via custom values.yaml (Visit https://github.com/carbonetes/carbonetes-helm-chart for full documentation):
-      helm upgrade carbonetes-analyzer -f carbonetes-creds.yaml carbonetes/carbonetes-analyzer
+    Via custom carbonetes-creds.yaml (Visit https://carbonetes.github.io/carbonetes-helm-chart for full documentation):
+      helm upgrade <release-name> -f <carbonetes-creds.yaml> carbonetes/carbonetes-analyzer
 {{- end }}
