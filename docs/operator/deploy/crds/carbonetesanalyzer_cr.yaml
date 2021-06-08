@@ -1,0 +1,45 @@
+apiVersion: charts.carbonetes.com/v1alpha1
+kind: CarbonetesAnalyzer
+metadata:
+  name: carbonetesanalyzer-sample
+spec:
+  affinity: {}
+  autoscaling:
+    enabled: false
+    maxReplicas: 100
+    minReplicas: 1
+    targetCPUUtilizationPercentage: 80
+  # Set your valid Carbonetes credentials here
+  carbonetesCreds:
+    password: "your-username"
+    username: "your-password"
+  # Debugging purposes
+  debugging:
+    enabled: false
+  fullnameOverride: ""
+  image:
+    pullPolicy: Always
+    repository: carbonetes/carbonetes-analyzer:1.0.2
+  imagePullSecrets: []
+  ingress:
+    annotations: {}
+    enabled: false
+    hosts:
+    - host: chart.local
+      paths: []
+    tls: []
+  nameOverride: ""
+  nodeSelector: {}
+  podAnnotations: {}
+  podSecurityContext: {}
+  replicaCount: 1
+  resources: {}
+  securityContext: {}
+  service:
+    port: 3000
+    type: ClusterIP
+  serviceAccount:
+    annotations: {}
+    create: true
+    name: carbonetes-analyzer
+  tolerations: []
