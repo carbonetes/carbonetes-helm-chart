@@ -32,7 +32,7 @@ entries:
     description: Executes Carbonetes complete security analysis
     digest: e710c1d04feea813ba2134e715d968fc8293aac4006987ca1e39e59a8ee10656
     home: https://carbonetes.com
-    icon: https://carbonetes.github.io/carbonetes-helm-chart/icon.png
+    icon: https://carbonetes.github.io/carbonetes-helm-chart/img/logo.png
     keywords:
     - security
     - analysis
@@ -57,7 +57,7 @@ entries:
     description: Executes Carbonetes complete security analysis
     digest: a64bc8e0a4f3394cbd93f631de9e972bba646b96a3c4bc494ea41a7020daec67
     home: https://carbonetes.com
-    icon: https://cdn.carbonetes.com/carbonetes-plugin/assets/branding/branding_header.png
+    icon: https://carbonetes.github.io/carbonetes-helm-chart/img/logo.png
     keywords:
     - security
     - analysis
