@@ -162,7 +162,7 @@
             <!-- Design Body -->
             <h3 style="color:#247ea0; font-weight: bold;">Carbonetes Analyzer</h3>
             <div style="padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
-              <p>The Carbonetes Analyzer is created specifically, to used as Carbonetes Helm Chart.</p>
+              <p>The Carbonetes Analyzer is created specifically, to function as Carbonetes Helm Chart.</p>
               <p><a style="text-decoration: none; color:#247ea0; font-weight: bold;" href="https://helm.sh/">Helm</a> is a package manager for Kubernetes.
                 It helps deploying applications easily in a cluster. Helm uses
                 <a style="text-decoration: none; color:#247ea0; font-weight: bold;" href="https://helm.sh/docs/topics/charts/">Charts</a> as its packaging format.
@@ -179,7 +179,7 @@
               </div>
               <p>Then install <span style="font-style: italic; color: #247ea0;">Carbonetes Analyzer</span> using the command below:</p>
               <div id="container" style="padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
-                <p id="content">$ helm install &lt;release-name&gt; carbonetes/carbonetes-analyzer --set carbonetesCreds.username="username@email.com" --set carbonetesCreds.password="mypassword"</p>
+                <p id="content">$ helm install &lt;release-name&gt; carbonetes/carbonetes-analyzer --set carbonetesCreds.username="YOUR_USERNAME" --set carbonetesCreds.password="YOUR_PASSWORD"</p>
               </div>
               <p>Or via custom <span style="font-style: italic; color: #247ea0;">values.yaml</span>:</p>
               <div id="container" style="padding: 5px; padding-left: 15px; padding-top: 10px; margin-bottom: 10px;" class="col-sm-12">
@@ -190,8 +190,8 @@
                 <ul style="list-style-type: none;">
                   <li style="color: #fab125; font-family: monospace">carbonetesCreds:</li>
                     <ul style="list-style-type: none;">
-                      <li style="color: #fab125; font-family: monospace">username: <span style="color: #f8f8f8">"username@email.com"</span></li>
-                      <li style="color: #fab125; font-family: monospace">password: <span style="color: #f8f8f8">"password"</span></li>
+                      <li style="color: #fab125; font-family: monospace">username: <span style="color: #f8f8f8">"YOUR_USERNAME"</span></li>
+                      <li style="color: #fab125; font-family: monospace">password: <span style="color: #f8f8f8">"YOUR_PASSWORD"</span></li>
                     </ul>
                 </ul>
               </div>
