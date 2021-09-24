@@ -9,7 +9,7 @@ debugging:
   enabled: false
 
 image:
-  repository: carbonetes/carbonetes-analyzer:1.0.2
+  repository: carbonetes/carbonetes-analyzer:1.0.3
   pullPolicy: Always
 
 imagePullSecrets: []
